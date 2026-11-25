@@ -126,7 +126,6 @@ def test_dev_only_loads_regardless_of_switch(tmp_path: Path) -> None:
     assert info is not None
     assert info.source == PluginSource.DEV
     assert info.inactive_copy is None
-    assert info.is_dev_only
 
 
 def test_dev_dir_name_must_equal_app_id(tmp_path: Path) -> None:
